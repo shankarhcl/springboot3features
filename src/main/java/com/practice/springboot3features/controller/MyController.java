@@ -16,7 +16,7 @@ public class MyController {
 	@RequestMapping("/test")
 	public ResponseEntity<Student> testing() {
 		var newAddress="America";
-		var student  = new Student(1,"Shankar Sharma",newAddress);
+		var student  = new Student(1,"Nick",newAddress);
 		System.out.println("student: "+student);
 		System.out.println("student data: "+student.id()+ "--"+student.name()+"--"+student.address());
 		return new  ResponseEntity<Student>(student, HttpStatusCode.valueOf(200));
